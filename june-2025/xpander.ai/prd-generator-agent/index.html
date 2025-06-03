@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRD Generator Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>PRD Generator Agent</h1>
+  <form id="prd-form">
+    <label for="product-name">Product Name:</label>
+    <input type="text" id="product-name" required />
+
+    <label for="target-audience">Target Audience:</label>
+    <input type="text" id="target-audience" required />
+
+    <label for="goals">Goals (comma or newline separated):</label>
+    <textarea id="goals" rows="3"></textarea>
+
+    <label for="features">Features (comma or newline separated):</label>
+    <textarea id="features" rows="3"></textarea>
+
+    <label for="success-metrics">Success Metrics (comma or newline separated):</label>
+    <textarea id="success-metrics" rows="3"></textarea>
+
+    <button type="submit">Generate PRD</button>
+  </form>
+
+  <div id="prd-output" class="hidden"></div>
+  <button id="copy-btn" class="hidden">Copy to Clipboard</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
